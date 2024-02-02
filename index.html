@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Victor Ferreira Yonemoto" />
+    <meta
+      name="description"
+      content="Crie e desvende mensagens secretas para compartilhar com seus amigos!"
+    />
+    <title>Mensagens Secretas</title>
+    <link rel="icon" href="./img/chat-regular-white.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./responsive.css" />
+  </head>
+  <body class="font__familysize">
+    <div class="container">
+      <header class="header">
+        <img
+          src="./img/chat-regular-white.png"
+          alt="website logo"
+          class="logo"
+        />
+        <h1 class="header__h1">Encrypt your Message</h1>
+        <div class="checkbox__wrapper">
+          <input type="checkbox" id="theme" class="theme" />
+          <label for="theme"></label>
+        </div>
+      </header>
+      <main class="main">
+        <section class="main__section">
+          <textarea class="font__familysize section__text text" placeholder="Type your text"></textarea>
+          <h6 class="informacao">Somente letras minúsculas e sem acentos.</h6>
+          <div class="btn__container">
+            <button class="font__familysize btn main__btn" onclick="btnEncrypt()">
+              Criptografar
+            </button>
+            <button class="font__familysize btn main__btn" onclick="btnDecrypt()">
+              Descriptografar
+            </button>
+          </div>
+        </section>
+        <section class="main__section result">
+          <textarea class="font__familysize section__text result__text" placeholder="No message found"></textarea>
+          <div class="btn__container">
+            <button class="font__familysize btn btn__copie" onclick="copyContent()">
+              Copiar
+            </button>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        &copy; Encrypted Messages <time id="year"></time>
+      </footer>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

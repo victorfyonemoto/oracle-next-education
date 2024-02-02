@@ -1,0 +1,49 @@
+/* || SCREEN */
+
+@media screen and (min-width: 720px) {
+    .header {
+        padding-bottom: 3rem;
+    }
+
+    .main {
+        flex-direction: row;
+    }
+
+    .main__section:first-of-type {
+        width: 80%;
+        min-height: 70rem;
+        margin-left: 2rem;
+    }
+
+    .main__section:last-of-type {
+        width: 40%;
+        min-height: 70rem;
+        margin-right: 2rem;     
+    }
+
+    .btn__container:first-of-type {
+        gap: 5rem;
+    }
+
+    .btn {
+        width: 35%;
+        min-height: 6rem;
+      }
+
+      .main__btn {
+        width: 20%;
+      }
+}
+
+/* || THEME */
+
+.light {
+    --BGCOLOR: #E5E5E5;
+    --BGCOLOR-RESULT: rgba(245, 245, 245, 1);
+    --FONT-COLOR: rgba(0, 0, 0, 1);
+    --BTN-COLOR: rgb(14, 71, 141);
+    --BTN-COLORHOVER: rgba(10, 56, 113, 0.8);
+    --OUTLINE-COLOR: rgba(0, 0, 0, 1);
+    --BGCOLOR-FOOTER: rgba(0, 0, 0, 1);
+    --FONT-COLORFOOTER: rgba(245, 245, 245, 1);
+}
