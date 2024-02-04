@@ -38,12 +38,13 @@
 /* || THEME */
 
 .light {
-    --BGCOLOR: #E5E5E5;
+    --BGCOLOR: rgba(229, 229, 229, 1);
     --BGCOLOR-RESULT: rgba(245, 245, 245, 1);
+    --BOX-SHADOW:rgba(0, 0, 0, 0.35) 0px 5px 15px;
     --FONT-COLOR: rgba(0, 0, 0, 1);
     --BTN-COLOR: rgb(14, 71, 141);
     --BTN-COLORHOVER: rgba(10, 56, 113, 0.8);
     --OUTLINE-COLOR: rgba(0, 0, 0, 1);
-    --BGCOLOR-FOOTER: rgba(0, 0, 0, 1);
+    --BGCOLOR-FOOTER: rgba(19, 17, 20, 1);
     --FONT-COLORFOOTER: rgba(245, 245, 245, 1);
 }

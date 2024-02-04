@@ -24,6 +24,14 @@ checkbox.addEventListener('change', function() {
 
 /* || TEXT */
 
+const pikachu = document.querySelector('.result__text');
+
+function removePikachu(){
+    if(resultText.value.length != 0) {
+        pikachu.style.backgroundImage = "none";
+    }
+}
+
 const textArea = document.querySelector(".text");
 const resultText = document.querySelector(".result__text");
 
@@ -31,6 +39,7 @@ function btnEncrypt() {
     const encryptedText = encrypt(textArea.value);
     resultText.value = encryptedText;
     textArea.value = "";
+    removePikachu();
 }
 
 function encrypt(encryptedString) {
@@ -53,6 +62,7 @@ function btnDecrypt() {
     const decryptedText = decrypt(textArea.value);
     resultText.value = decryptedText;
     textArea.value = "";
+    removePikachu();
 }
 
 
@@ -83,3 +93,6 @@ const copyContent = async () => {
       console.error('Failed to copy: ', err);
     }
   }
+
+
+

@@ -1,6 +1,6 @@
 /* || Imports */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,500;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,500;1,700&display=swap");
 
 /* || RESETS */
 
@@ -34,11 +34,12 @@
 
   --BGCOLOR: rgba(0, 0, 0, 1);
   --BGCOLOR-RESULT: rgba(10, 10, 10, 1);
+  --BOX-SHADOW: rgba(245, 245, 245, 0.35) 0px 5px 15px;
   --FONT-COLOR: rgba(245, 245, 245, 1);
   --BTN-COLOR: rgba(10, 56, 113, 1);
   --BTN-COLORHOVER: rgba(10, 56, 113, 0.6);
   --BTN-FONTCOLOR: rgba(245, 245, 245, 1);
-  --OUTLINE-COLOR:  rgba(245, 245, 245, 1);
+  --OUTLINE-COLOR: rgba(245, 245, 245, 1);
   --BGCOLOR-FOOTER: rgba(245, 245, 245, 1);
   --FONT-COLORFOOTER: rgba(0, 0, 0, 1);
 
@@ -79,7 +80,7 @@ textarea {
 }
 
 .checkbox__wrapper label::before {
-  content: '';
+  content: "";
   display: block;
   height: 2.4rem;
   width: 2.4rem;
@@ -88,7 +89,8 @@ textarea {
   transition: background 0.2s;
 }
 
-.section__text:focus, .btn:focus {
+.section__text:focus,
+.btn:focus {
   outline-color: var(--OUTLINE-COLOR);
 }
 
@@ -130,7 +132,7 @@ textarea {
   gap: 1rem;
 }
 
-  /* SECTION */
+/* SECTION */
 
 .main__section {
   display: flex;
@@ -147,14 +149,11 @@ textarea {
 .main__section:last-of-type {
   width: 80%;
   height: 27rem;
-  background-color: var(--BGCOLOR-RESULT);
-  box-shadow: var(--BOX-SHADOW);
 }
 
 .section__text {
-  padding: 0 1.2rem;
+  padding: 1rem 0;
   border-radius: var(--BORDER-RADIUS);
-  background-color: var(--BGCOLOR);
   color: var(--FONT-COLOR);
   border-style: none;
   width: 100%;
@@ -162,23 +161,32 @@ textarea {
 }
 
 .text {
-  border: 2px solid teal;
+  background-color: var(--BGCOLOR);
   text-transform: lowercase;
-}
-
-.section__text:last-of-type {
-  background-color: var(--BGCOLOR-RESULT);
-}
-
-.result {
-  border: 2px solid teal;
-}
-
-.result__text::placeholder{
   text-align: center;
 }
 
-.section__text::placeholder{
+.text::placeholder {
+  text-align: center;
+  color: var(--FONT-COLOR);
+}
+
+.result {
+  background-color: var(--BGCOLOR-RESULT);
+  box-shadow: var(--BOX-SHADOW);
+}
+
+.result__text {
+  background-color: var(--BGCOLOR-RESULT);
+  text-align: center;
+  background-image: url(./img/detective-pikachu.png);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 20rem;
+}
+
+.result__text::placeholder {
+  text-align: center;
   color: var(--FONT-COLOR);
 }
 
@@ -187,7 +195,7 @@ h6 {
   font-size: 1.4rem;
 }
 
-  /* BUTTON */
+/* BUTTON */
 
 .btn__container {
   display: flex;
